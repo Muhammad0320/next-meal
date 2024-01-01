@@ -1,16 +1,17 @@
 import Link from "next/link";
 
+import classes from "./miannav.module.css";
 import LogoImage from "@/assets/logo.png";
 
 function MainNav() {
   return (
-    <header>
-      <Link href="/">
+    <header className={classes.header}>
+      <Link href="/" className={classes.logi}>
         <img src={LogoImage.src} alt="A plate with lots of food init" />
         NextLevel Foods
       </Link>
 
-      <nav>
+      <nav className={classes.nav}>
         <ul>
           <li>
             <Link href="/meals"> Community meals </Link>
