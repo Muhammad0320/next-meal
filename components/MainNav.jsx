@@ -8,7 +8,7 @@ function MainNav() {
 
   return (
     <header className={classes.header}>
-      <Link href="/" className={classes.logi}>
+      <Link href="/" className={classes.logo}>
         <Image src={LogoImage} alt="A plate with lots of food init" priority />
         NextLevel Foods
       </Link>
