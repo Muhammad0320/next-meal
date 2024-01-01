@@ -3,6 +3,8 @@ import LogoImage from "@/assets/logo.png";
 import classes from "./miannav.module.css";
 
 function MainNav() {
+  console.log(classes);
+
   return (
     <header className={classes.header}>
       <Link href="/" className={classes.logi}>
