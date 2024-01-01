@@ -1,7 +1,6 @@
 import Link from "next/link";
-
-import classes from "./miannav.module.css";
 import LogoImage from "@/assets/logo.png";
+import classes from "./miannav.module.css";
 
 function MainNav() {
   return (
