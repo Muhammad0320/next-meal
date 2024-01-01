@@ -11,7 +11,7 @@ function Blogs() {
       </p>
       <p>
         {" "}
-        <Link href="/blogs/blog"> Blog 1 </Link>{" "}
+        <Link href="/blogs/blog-2"> Blog 1 </Link>{" "}
       </p>
     </main>
   );
