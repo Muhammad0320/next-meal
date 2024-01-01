@@ -9,15 +9,15 @@ export default function Home() {
       <p>
         {" "}
         <Link href={"/about"}> About us </Link>{" "}
-        <p>
-          <Link href="/meals"> Meals page </Link>
-        </p>
-        <p>
-          <Link href="/meals/share"> Meals share </Link>
-        </p>
-        <p>
-          <Link href="/community"> Community</Link>
-        </p>
+      </p>
+      <p>
+        <Link href="/meals"> Meals page </Link>
+      </p>
+      <p>
+        <Link href="/meals/share"> Meals share </Link>
+      </p>
+      <p>
+        <Link href="/community"> Community</Link>
       </p>
     </main>
   );
