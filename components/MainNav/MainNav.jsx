@@ -17,7 +17,7 @@ function MainNav() {
             <Link href="/meals"> Community meals </Link>
           </li>
           <li>
-            <Link href="/meals/community"> Foodie community </Link>
+            <Link href="/community"> Foodie community </Link>
           </li>
         </ul>
       </nav>
