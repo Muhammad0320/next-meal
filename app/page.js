@@ -9,6 +9,9 @@ export default function Home() {
       <p>
         {" "}
         <Link href={"/about"}> About us </Link>{" "}
+        <Link href="/meals"> Meals page </Link>
+        <Link href="/meals/share"> Meals share </Link>
+        <Link href="/community"> Community</Link>
       </p>
     </main>
   );
