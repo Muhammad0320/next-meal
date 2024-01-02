@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import LogoImage from "@/assets/logo.png";
 import classes from "./miannav.module.css";
+import Navlink from "../NavLinks/Navlink";
 
 function MainNav() {
   return (
@@ -14,10 +15,10 @@ function MainNav() {
       <nav className={classes.nav}>
         <ul>
           <li>
-            <Link href="/meals"> Community meals </Link>
+            <Navlink href="/meals"> Browse Meals </Navlink>
           </li>
           <li>
-            <Link href="/community"> Foodie community </Link>
+            <Navlink href="/community"> Food Community </Navlink>
           </li>
         </ul>
       </nav>
