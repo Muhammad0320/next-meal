@@ -4,29 +4,32 @@ import classes from "./mealDetails.module.css";
 import { getMeal } from "@/lib/meals";
 
 function MealDetails({ params }) {
-  const meals = getMeal(params.slug);
+  const { title, creator, creator_email, instructions, image, summary } =
+    getMeal(params.slug);
+
+  instructions = instructions.replace(/\n/g, "</br>");
 
   return (
     <>
       <header className={classes.header}>
         <div className={classes.image}>
-          <Image fill />
+          <Image src={image} alt={title} fill />
         </div>
 
         <div className={classes.headerText}>
-          <h1> TITLE </h1>
+          <h1> {title} </h1>
 
           <p className={classes.creator}>
-            by <a href={`mailto: ${""}`}> Name </a>
+            by <a href={`mailto: ${creator_email}`}> {creator} </a>
           </p>
 
-          <p className={classes.summary}>SUMMARY</p>
+          <p className={classes.summary}>{summary}</p>
         </div>
       </header>
       <main>
         <p
           className={classes.instructions}
-          dangerouslySetInnerHTML={{ __html: "..." }}
+          dangerouslySetInnerHTML={{ __html: instructions }}
         ></p>
       </main>
     </>
