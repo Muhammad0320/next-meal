@@ -21,7 +21,10 @@ function MealDetails() {
         </div>
       </header>
       <main>
-        <p className={classes.instructions}></p>
+        <p
+          className={classes.instructions}
+          dangerouslySetInnerHTML={{ __html: "..." }}
+        ></p>
       </main>
     </>
   );
