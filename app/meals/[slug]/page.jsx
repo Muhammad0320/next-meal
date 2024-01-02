@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import classes from "./mealDetails.module.css";
 
 function MealDetails() {
