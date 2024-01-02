@@ -1,3 +1,5 @@
+"use client";
+
 function ErrorPage() {
   return (
     <main className="error">
