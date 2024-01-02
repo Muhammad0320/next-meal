@@ -3,8 +3,10 @@ import { getMeals } from "@/lib/meals";
 import classes from "./page.module.css";
 import MealGrid from "@/components/meals/MealGrid";
 
-function Meals() {
-  const meals = getMeals();
+async function Meals() {
+  const meals = await getMeals();
+
+  console.log(meals);
 
   return (
     <>

@@ -1,7 +1,7 @@
 import MealItem from "./MealItem";
 import classes from "./MealsGrid.module.css";
 
-function MealGrid({ meals }) {
+function MealGrid({ meals = [] }) {
   return (
     <ul className={classes.meals}>
       {meals.map((meal) => (
