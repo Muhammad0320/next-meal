@@ -1,9 +1,11 @@
 import Link from "next/link";
-
+import { getMeals } from "@/lib/meals";
 import classes from "./page.module.css";
 import MealGrid from "@/components/meals/MealGrid";
 
 function Meals() {
+  const meals = getMeals();
+
   return (
     <>
       <header className={classes.header}>
@@ -22,7 +24,7 @@ function Meals() {
       </header>
 
       <main className={classes.main}>
-        <MealGrid meals={[]} />
+        <MealGrid meals={meals} />
       </main>
     </>
   );
