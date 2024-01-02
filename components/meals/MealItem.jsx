@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import classes from "./MealsGrid.module.css";
+import classes from "./GridItem.module.css";
 
 export default function MealItem({ title, slug, image, summary, creator }) {
   return (
