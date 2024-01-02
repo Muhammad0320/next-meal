@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import classes from "./page.module.css";
+import MealGrid from "@/components/meals/MealGrid";
 
 function Meals() {
   return (
@@ -8,7 +9,7 @@ function Meals() {
       <header className={classes.header}>
         <h1>
           Delicious meals created{" "}
-          <span className={classes.highlidht}> bu you </span>
+          <span className={classes.highlight}> bu you </span>
         </h1>
 
         <p>
@@ -20,7 +21,9 @@ function Meals() {
         </p>
       </header>
 
-      <main className={classes.main}></main>
+      <main className={classes.main}>
+        <MealGrid meals={[]} />
+      </main>
     </>
   );
 }
