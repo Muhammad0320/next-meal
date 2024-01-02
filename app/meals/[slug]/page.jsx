@@ -1,9 +1,28 @@
-function MealSlug() {
+import classes from "./mealDetails.module.css";
+
+function MealDetails() {
   return (
-    <main>
-      <p> This is the slug of meal shit! </p>
-    </main>
+    <>
+      <header className={classes.header}>
+        <div className={classes.image}>
+          <Image fill />
+        </div>
+
+        <div className={classes.headerText}>
+          <h1> TITLE </h1>
+
+          <p className={classes.creator}>
+            by <a href={`mailto: ${""}`}> Name </a>
+          </p>
+
+          <p className={classes.summary}>SUMMARY</p>
+        </div>
+      </header>
+      <main>
+        <p className={classes.instructions}></p>
+      </main>
+    </>
   );
 }
 
-export default MealSlug;
+export default MealDetails;
