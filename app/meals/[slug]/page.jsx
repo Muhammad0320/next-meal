@@ -10,6 +10,10 @@ function MealDetails({ params }) {
 
   meals.instructions = meals.instructions.replace(/\n/g, "</br>");
 
+  if (!meals) {
+    notFound();
+  }
+
   return (
     <>
       <header className={classes.header}>
