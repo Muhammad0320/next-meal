@@ -56,6 +56,7 @@ function ImagePicker({ label, name }) {
           id={name}
           onChange={handleChangeImage}
           ref={imageRef}
+          className={classes.input}
           required
         />
         <button className={classes.button} type="button" onClick={handleClick}>
