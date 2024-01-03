@@ -4,10 +4,11 @@ import classes from "./mealDetails.module.css";
 import { getMeal } from "@/lib/meals";
 
 function MealDetails({ params }) {
-  const { title, creator, creator_email, instructions, image, summary } =
-    getMeal(params.slug);
+  const meals = getMeal(params.slug);
 
-  instructions = instructions.replace(/\n/g, "</br>");
+  const { title, creator, creator_email, image, summary } = meals;
+
+  meals.instructions = meals.instructions.replace(/\n/g, "</br>");
 
   return (
     <>
