@@ -12,6 +12,10 @@ function ImagePicker({ label, name }) {
           name={name}
           id={name}
         />
+        <button className={classes.button} type="button">
+          {" "}
+          Pick an Image{" "}
+        </button>
       </div>
     </div>
   );
