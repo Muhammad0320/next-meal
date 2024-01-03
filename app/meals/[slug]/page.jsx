@@ -10,8 +10,6 @@ function MealDetails({ params }) {
 
   if (!meals) {
     notFound();
-
-    console.log("suuu");
   }
 
   const { title, creator, creator_email, image, summary } = meals;
