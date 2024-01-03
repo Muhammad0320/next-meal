@@ -30,7 +30,7 @@ function MealDetails({ params }) {
       <main>
         <p
           className={classes.instructions}
-          dangerouslySetInnerHTML={{ __html: instructions }}
+          dangerouslySetInnerHTML={{ __html: meals.instructions }}
         ></p>
       </main>
     </>
