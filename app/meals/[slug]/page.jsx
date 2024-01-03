@@ -1,18 +1,22 @@
 import Image from "next/image";
 
+import { notFound } from "next/navigation";
+
 import classes from "./mealDetails.module.css";
 import { getMeal } from "@/lib/meals";
 
 function MealDetails({ params }) {
   const meals = getMeal(params.slug);
 
+  if (!meals) {
+    notFound();
+
+    console.log("suuu");
+  }
+
   const { title, creator, creator_email, image, summary } = meals;
 
   meals.instructions = meals.instructions.replace(/\n/g, "</br>");
-
-  if (!meals) {
-    notFound();
-  }
 
   return (
     <>
