@@ -8,10 +8,10 @@ export default function ShareMealPage() {
     const meals = {
       title: formData.get("title"),
       summary: formData.get("summary"),
-      instruction: formData.get("instruction"),
+      instructions: formData.get("instructions"),
       image: formData.get("image"),
-      creator: formData.get("creator"),
-      creator_email: formData.get("creator_email"),
+      creator: formData.get("name"),
+      creator_email: formData.get("email"),
     };
 
     console.log(meals);
@@ -45,6 +45,7 @@ export default function ShareMealPage() {
             <label htmlFor="summary">Short Summary</label>
             <input type="text" id="summary" name="summary" required />
           </p>
+
           <p>
             <label htmlFor="instructions">Instructions</label>
             <textarea
