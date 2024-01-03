@@ -1,22 +1,8 @@
+import { shareMeal } from "@/lib/actions";
 import ImagePicker from "./ImagePicker";
 import classes from "./page.module.css";
 
 export default function ShareMealPage() {
-  const onSubmitForm = async (formData) => {
-    "use server";
-
-    const meals = {
-      title: formData.get("title"),
-      summary: formData.get("summary"),
-      instructions: formData.get("instructions"),
-      image: formData.get("image"),
-      creator: formData.get("name"),
-      creator_email: formData.get("email"),
-    };
-
-    console.log(meals);
-  };
-
   return (
     <>
       <header className={classes.header}>
@@ -26,7 +12,7 @@ export default function ShareMealPage() {
         <p>Or any other meal you feel needs sharing!</p>
       </header>
       <main className={classes.main}>
-        <form className={classes.form} action={onSubmitForm}>
+        <form className={classes.form} action={shareMeal}>
           <div className={classes.row}>
             <p>
               <label htmlFor="name">Your name</label>
