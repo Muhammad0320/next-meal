@@ -41,7 +41,11 @@ function ImagePicker({ label, name }) {
           {!pickedImage && <p> No picked image yet!</p>}
 
           {pickedImage && (
-            <Image src={pickedImage} alt="The image selected by the user" />
+            <Image
+              src={pickedImage}
+              alt="The image selected by the user"
+              fill
+            />
           )}
         </div>
 
