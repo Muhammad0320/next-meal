@@ -5,6 +5,19 @@ import { notFound } from "next/navigation";
 import classes from "./mealDetails.module.css";
 import { getMeal } from "@/lib/meals";
 
+export const generateMetadata = async ({ params }) => {
+  const meal = getMeal(params.slug);
+
+  if (!meal) {
+    notFound();
+  }
+
+  return {
+    title: meal.title,
+    description: meal.description,
+  };
+};
+
 function MealDetails({ params }) {
   const meals = getMeal(params.slug);
 
