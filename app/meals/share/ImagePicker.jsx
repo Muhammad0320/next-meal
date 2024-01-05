@@ -32,6 +32,8 @@ function ImagePicker({ label, name }) {
     fileReader.readAsDataURL(file);
   };
 
+  console.log(pickedImage);
+
   return (
     <div className={classes.picker}>
       <label htmlFor={name}> {label} </label>
