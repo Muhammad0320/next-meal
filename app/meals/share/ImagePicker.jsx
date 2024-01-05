@@ -40,7 +40,7 @@ function ImagePicker({ label, name }) {
 
       <div className={classes.controls}>
         <div className={classes.preview}>
-          {!pickedImage && <p> No picked image yet!</p>}
+          {!pickedImage && <p> No image picked yet!</p>}
 
           {pickedImage && (
             <Image
