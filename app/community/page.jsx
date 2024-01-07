@@ -1,9 +1,10 @@
 import Image from "next/image";
-
-import mealIcon from "@/assets/icons/meal.png";
-import communityIcon from "@/assets/icons/community.png";
-import eventsIcon from "@/assets/icons/events.png";
 import classes from "./page.module.css";
+import mealIcon from "@/assets/icons/meal.png";
+import eventsIcon from "@/assets/icons/events.png";
+import communityIcon from "@/assets/icons/community.png";
+
+
 
 export default function Community() {
   return (

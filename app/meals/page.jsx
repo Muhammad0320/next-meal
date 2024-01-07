@@ -16,6 +16,8 @@ export const metadata = {
 };
 
 function Meals() {
+
+  
   return (
     <>
       <header className={classes.header}>

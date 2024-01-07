@@ -8,8 +8,10 @@ import classes from "./page.module.css";
 import MealsFormSubmit from "../MealsFormSubmit";
 
 export default function ShareMealPage() {
-  const [state, formAction] = useFormState(shareMeal, { message: null });
 
+
+  const [state, formAction] = useFormState(shareMeal, { message: null });
+    
   return (
     <>
       <header className={classes.header}>

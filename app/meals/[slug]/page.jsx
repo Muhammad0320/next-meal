@@ -6,8 +6,12 @@ import classes from "./mealDetails.module.css";
 import { getMeal } from "@/lib/meals";
 
 export const generateMetadata = async ({ params }) => {
+
+
   const meal = getMeal(params.slug);
 
+
+   
   if (!meal) {
     notFound();
   }
@@ -16,9 +20,16 @@ export const generateMetadata = async ({ params }) => {
     title: meal.title,
     description: meal.description,
   };
+
+
 };
 
+
+
+
 function MealDetails({ params }) {
+
+  
   const meals = getMeal(params.slug);
 
   if (!meals) {
